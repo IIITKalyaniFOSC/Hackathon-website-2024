@@ -87,9 +87,17 @@ const Sponsors = () => {
                     </div>
                 </div>
             </div>
-            <img src={stars} alt="stars" className="absolute w-screen h-screen top-[100%] object-cover opacity-70" />
+            <div
+          className="absolute  h-screen top-[95%] object-cover opacity-70 inset-0"
+          style={{
+            backgroundImage: `url(${stars})`,
+            backgroundPosition: `${50+bgPosition.x}% ${50+bgPosition.y}%`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}
+        ></div>
         </section>
-    )
+    )  
 }
 
 export default Sponsors;

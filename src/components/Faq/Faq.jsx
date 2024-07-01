@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import stars from '../../assets/images/footer/stars.svg';
-import clouds from '../../assets/images/faq/faqbg.svg';
 
 const faqData = [
   {
@@ -49,22 +48,6 @@ const faqData = [
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [bgPosition, setBgPosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const { innerWidth, innerHeight } = window;
-      const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
-      const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
-      setBgPosition({ x, y });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
 
   const handleToggle = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -72,11 +55,7 @@ const Faq = () => {
 
   return (
     <section id='faq'>
-      <div className="relative w-screen flex items-start justify-center" style={{
-        backgroundImage: `url(${stars})`,
-        backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-        backgroundSize: 'cover',
-      }}>
+      <div className="relative w-screen flex items-start justify-center">
         <div className="relative z-10 text-left mx-4 md:mx-8 lg:mx-12 xl:mx-20 w-full max-w-[1280px]">
           <h1 className="text-[#9E9E9E] text-3xl md:text-4xl xl:text-5xl m-0">
             $ ./<span id="heading-rules" className="text-white">FAQ</span>

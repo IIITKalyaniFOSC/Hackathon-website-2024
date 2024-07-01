@@ -13,8 +13,8 @@ function Footer() {
     useEffect(() => {
         const handleMouseMove = (e) => {
             const { innerWidth, innerHeight } = window;
-            const x = (e.clientX / innerWidth - 0.5) * 30; // Adjust the multiplier for sensitivity
-            const y = (e.clientY / innerHeight - 0.5) * 30; // Adjust the multiplier for sensitivity
+            const x = (e.clientX / innerWidth - 0.5) * 10; // Adjust the multiplier for sensitivity
+            const y = (e.clientY / innerHeight - 0.5) * 10; // Adjust the multiplier for sensitivity
             setBgPosition({ x, y });
         };
 
@@ -30,7 +30,11 @@ function Footer() {
             <div id="footer" className='main-footer'>
                 <div id="upfooter" className='bg-cover upfooter relative'>
                     <div className="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%]  gap-5 justify-center item-center">
-                        <img src={stars} alt="" className='absolute object-cover w-full h-full' style={{ transform: `translate(${bgPosition.x}px, ${bgPosition.y}px)` }} />
+                    <div className="absolute inset-0 z-0" style={{backgroundImage: `url(${stars})`,
+                    backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
+                    backgroundSize: 'cover',
+          }}
+        ></div>
                         <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center gap-5">
                             <div className="address footerelements text-center">
                                 <h1 className="footerheading text-2xl md:text-4xl md:mt-0 m-0 text-heading-footer">
