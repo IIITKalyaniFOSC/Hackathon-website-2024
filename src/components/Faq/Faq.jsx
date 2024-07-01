@@ -71,7 +71,7 @@ const Faq = () => {
   };
 
   return (
-    <section id='faq'>
+    <section id='faq' className='pt-[95px]'>
       <div className="relative w-screen flex items-start justify-center" style={{
         backgroundImage: `url(${stars})`,
         backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,

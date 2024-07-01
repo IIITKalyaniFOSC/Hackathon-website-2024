@@ -22,22 +22,15 @@ function Discord() {
     }, []);
 
     return (
-        <div className="section">
-            <div className="relative w-screen flex items-start justify-center" style={{
-                backgroundImage: `url(${stars})`,
-                backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
-                backgroundSize: 'cover',
-            }}>
-                <img src={Bgimage} alt="Join Discord" className="img-background" />
-
-                <a
-                    href="https://discord.gg/UHwPBzy7UF"
-                    className="bottom-overlay"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                </a>
-            </div>
+        <div id="footer" className="section pt-[55px]">
+            <div className="star-background" style={{ transform: `translate(${bgPosition.x}px, ${bgPosition.y}px)` }}></div>
+            <img src={Bgimage} alt="" className='img-background' />
+            <a
+                href="https://discord.gg/UHwPBzy7UF"
+                className="bottom-overlay"
+                target="_blank"
+                rel="noopener noreferrer"
+            ></a>
         </div>
     );
 }

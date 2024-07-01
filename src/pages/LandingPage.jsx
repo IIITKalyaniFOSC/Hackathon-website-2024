@@ -16,12 +16,12 @@ function LandingPage() {
       const width = window.innerWidth;
       if (width >= 3840) {
         
-        setBgSize("18%");
+        setBgSize("16%");
       } else if (width >= 2560) {
         // Adjustments for 1440p resolution
         setBgSize("18%");
       } else if (width >= 1248) {
-        setBgSize("18%");
+        setBgSize("16%");
       } else if (width >= 1024) {
         setBgSize("18%");
       } else if (width >= 750) {
@@ -63,7 +63,7 @@ function LandingPage() {
   return (
     <>
       <div
-        className=" h-full  2xl:h-[4000px] w-full flex flex-col text-center bg-no-repeat  bg-bg_color m-0"
+        className=" h-full min-[3840px]:h-[4000px] w-full flex flex-col text-center bg-no-repeat  bg-bg_color m-0"
         style={{
           backgroundImage: `url(${BgLandingPage})`,
           backgroundPosition: `${50 + bgPosition.x}% ${20 + bgPosition.y}%`,
@@ -73,20 +73,20 @@ function LandingPage() {
         {/* Hero section */}
         <section
           id="hero"
-          className=" ml-5 mr-5 max-[540px]:mt-[60px] mt-[110px] 2xl:mt-[150px] "
+          className=" ml-5 mr-5 max-[540px]:mt-[60px] mt-[110px]  min-[3840px]:mt-[250px] "
         >
-          <div>
+          <div className="">
             <h1
-              className="text-white min-[320px]:text-5xl md:text-7xl   xl:text-8xl  2xl:text-[12vh]  font-vt323"
+              className="text-white min-[320px]:text-5xl md:text-7xl xl:text-8xl  min-[3840px]:text-[12vh] font-vt323"
               style={{ textShadow: "2px 2px 0 rgb(236, 83, 176, 1)" }}
             >
               STATUS CODE <span className="text-red">1</span>
             </h1>
-            <h3 className="text-purple-900 font-vt323 min-[320px]:text-[20px] md:text-3xl xl:text-[40px] 2xl:m-11 2xl:p-10 2xl:text-[4vh] bg-gradient-to-r from-gradient_blue_purple-0 via-gradient_blue_purple-50 to-gradient_blue_purple-100  text-transparent bg-clip-text">
+            <h3 className="text-purple-900 font-vt323 min-[320px]:text-[20px] md:text-3xl xl:text-[40px] min-[3840px]:m-11 2xl:p-10 2xl:text-[4vh] bg-gradient-to-r from-gradient_blue_purple-0 via-gradient_blue_purple-50 to-gradient_blue_purple-100  text-transparent bg-clip-text">
               Code With Purpose & Innovate, Collaborate, Dominate
             </h3>
           </div>
-          <div className="flex text-center justify-center mt-5 ml-5 mr-5 2xl:m-11">
+          <div className="flex text-center justify-center mt-5 xl:mt-1 ml-5 mr-5 min-[3840px]:m-11">
             <div
               className="bg-top bg-no-repeat flex items-end flex-col justify-center md:h-[80%] bg-cover "
               style={{
@@ -98,7 +98,7 @@ function LandingPage() {
                 {/* <a href="https://statuscode-1.devfolio.co/"> */}
                 <div
                  
-                  className="bg-no-repeat bg-center bg-cover  text-center justify-center flex flex-row min-[320px]:mt-[25%] min-[640px]:mt-[10%] min-[750px]:mt-[6%] md:mt-[27%] lg:mt-[22%] xl:mt-[20%] 2xl:mt-[24%]"
+                  className="bg-no-repeat bg-center  bg-cover  text-center justify-center flex flex-row min-[320px]:mt-[25%] min-[640px]:mt-[10%] min-[750px]:mt-[6%] md:mt-[27%] lg:mt-[22%] xl:mt-[20%] min-[3840px]:mt-[21%]"
                   style={{
                     backgroundImage: `url(${DevfolioBtn})`,
                     backgroundSize: "contain",
@@ -109,19 +109,19 @@ function LandingPage() {
                   <button  onClick={() =>
                     window.open("https://statuscode-1.devfolio.co/")
                   }
-                   className="text-purple font-vt323 text-2xl text-center justify-center  flex  mt-2 mb-2 gap-3 2xl:gap-11 2xl:text-7xl 2xl:m-5     ">
-                    <img className="2xl:w-[5vh]" src={DevfolioLogo} />
-                    <p className="2xl:mt-5">Apply with Devfolio </p>
+                   className="text-purple font-vt323 text-2xl text-center justify-center  flex  mt-2 mb-2 xl:text-4xl gap-3 min-[3840px]:gap-11 min-[3840px]:text-7xl min-[3840px]:m-5     ">
+                    <img className="xl:w-[4vh] min-[3840px]:w-[5vh]" src={DevfolioLogo} />
+                    <p className="min-[3840px]:mt-5">Apply with Devfolio </p>
                   </button>
                 </div>
                 {/* </a> */}
-                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] 2xl:pl-[17vh] 2xl:pr-[17vh] 2xl:p-11 font-vt323 min-[320px]:text-[16px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
+                <p className="max-[540px]:leading-normal md:leading-tight xl:leading-normal md:text-[22px] xl:text-[24px] 2xl:text-[3vh] min-[3840px]:pl-[17vh] min-[3840px]:pr-[17vh] min-[3840px]:p-11 2xl:p-5 font-vt323 min-[320px]:text-[16px] md:text-2xl m-3 bg-gradient-to-b text-purple bg-clip-text">
                   Unleash your creativity and join Status Code 1, an official
                   MLH Member Event and the ultimate 36-hour hackathon
                   extravaganza! Compete across diverse categories, showcasing
                   your skills, ingenuity, and collaborative spirit alongside
                   like-minded individuals. Discover the perfect platform to
-                  challenge yourself,
+                  challenge yourself.
                 </p>
 
                 <button className="animate-bounce 2xl:w-[5%]  ">
@@ -136,12 +136,12 @@ function LandingPage() {
         </section>
 
         {/* Timer section  */}
-        <section id="timer" className="mt-[4%]">
+        <section id="timer" className="pt-[60px] mt-2">
           <TimerSection />
         </section>
 
         {/* Schedule section */}
-        <section id="schedule" className="mt-[4%]"></section>
+        <section id="schedule" className="pt-[60px] "></section>
         <Schedule />
       </div>
     </>

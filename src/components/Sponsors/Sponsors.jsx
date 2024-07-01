@@ -35,7 +35,7 @@ const Sponsors = () => {
     }, []);
 
     return (
-        <section className="relative" style={{
+        <section className="pt-[80px] relative" style={{
             backgroundImage: `url(${stars})`,
             backgroundPosition: `${50 + bgPosition.x}% ${50 + bgPosition.y}%`,
             backgroundSize: 'cover',

@@ -27,7 +27,7 @@ function Footer() {
 
     return (
         <>
-            <div id="footer" className='main-footer'>
+            <div  className='main-footer'>
                 <div id="upfooter" className='bg-cover upfooter relative'>
                     <div className="flex flex-col py-5 xl:py-10 h-[100%] xl:h-[100%]  gap-5 justify-center item-center">
                         <img src={stars} alt="" className='absolute object-cover w-full h-full' style={{ transform: `translate(${bgPosition.x}px, ${bgPosition.y}px)` }} />
