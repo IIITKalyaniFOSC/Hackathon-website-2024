@@ -9,8 +9,8 @@ import Sponsors from './components/Sponsors/Sponsors'
 import Faq from './components/Faq/Faq'
 import Cp from './components/Cp/Cp'
 // import CursorFollower from './components/CursorFollower';
-
 import LandingPage from './pages/LandingPage'
+import Man from './components/Man/Man'
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
        {/* <CursorFollower /> */}
       <Navbar />
       <LandingPage/>
+      <Man/>
       <Tracks />
       <Sponsors />
       <Cp/>

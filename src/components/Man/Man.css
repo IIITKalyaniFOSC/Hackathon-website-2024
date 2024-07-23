@@ -1,0 +1,15 @@
+.up-image {
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+}
+
+.up-image:hover {
+    opacity: 1;
+}
+
+.stars-background {
+    background-image: url('../../assets/images/man/stars.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
