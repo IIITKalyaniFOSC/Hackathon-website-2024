@@ -48,7 +48,7 @@ function Footer() {
                                 </p>
                             </div>
                             <div className="resources footerelements text-center">
-                                <h1 className="footerheading text-2xl md:text-4xl 3xl:text-6xl m-0 text-heading-footer">RESOURCES</h1>
+                                <h1 className="footerheading text-2xl md:text-4xl 3xl:text-6xl m-0 text-heading-footer">RESOURCE</h1>
                                 <a href="https://drive.google.com/file/d/1YQ_gJUuQ8ZyhQR8kTTD6IbFlA4QIy354/view?usp=sharing" className="footercontent text-xl md:text-2xl 3xl:text-4xl resourcecontent  text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Sponsorship Brochure<br />
                                 </a>
