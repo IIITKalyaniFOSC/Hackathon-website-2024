@@ -49,7 +49,7 @@ function Footer() {
                             </div>
                             <div className="resources footerelements text-center">
                                 <h1 className="footerheading text-2xl md:text-4xl 3xl:text-6xl m-0 text-heading-footer">RESOURCES</h1>
-                                <a href="https://drive.google.com/file/d/1thr3gYMwAX-h0DmaEIGyba44lG53hRxg/view?usp=sharing" className="footercontent text-xl md:text-2xl 3xl:text-4xl resourcecontent  text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
+                                <a href="https://drive.google.com/file/d/1YQ_gJUuQ8ZyhQR8kTTD6IbFlA4QIy354/view?usp=sharing" className="footercontent text-xl md:text-2xl 3xl:text-4xl resourcecontent  text-[#BEBEBE] hover:text-white mb-2" target="_blank" rel="noopener noreferrer text-style-footer">
                                     Sponsorship Brochure<br />
                                 </a>
                                 {/* <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" className="footercontent text-xl md:text-2xl resourcecontent cursor-pointer text-[#BEBEBE] hover:text-white" target="_blank" rel="noopener noreferrer text-style-footer">
