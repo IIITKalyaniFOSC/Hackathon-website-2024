@@ -138,9 +138,9 @@ function LandingPage() {
         </section>
 
 
-        <div className="mt-5">
+        <a className="mt-5" href="https://www.redbull.com/in-en/events/red-bull-basement-india" target="_blank" rel="noopener noreferrer">
           <img src={redbull} alt="redbull" style={{ width: "50%", height: "auto", margin: "0 auto" }} />
-        </div>
+        </a>
 
         
         {/* Timer section  */}
