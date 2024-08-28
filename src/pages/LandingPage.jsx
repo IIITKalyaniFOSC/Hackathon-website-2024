@@ -7,6 +7,8 @@ import TimerSection from "./TimerSection";
 import Schedule from "../components/Schedule/Schedule";
 import ScrollButton from "../assets/images/LandingPage/ScrollButton.svg";
 import './LandingPage.css';
+import redbull from "../assets/images/redbull.jpg"
+
 
 function LandingPage() {
   const [bgSize, setBgSize] = useState("10%");
@@ -135,10 +137,19 @@ function LandingPage() {
           </div>
         </section>
 
+
+        <div className="mt-5">
+          <img src={redbull} alt="redbull" style={{ width: "50%", height: "auto", margin: "0 auto" }} />
+        </div>
+
+        
         {/* Timer section  */}
         <section id="timer" className="max-[768px]:pt-[40px] pt-[60px] mt-2">
           <TimerSection />
         </section>
+
+        
+
 
         {/* Schedule section */}
         <section id="schedule" className="max-[768px]:pt-[10px] pt-[60px] "></section>
